@@ -6,7 +6,9 @@ module.exports = {
     theme: {
         extend: {
             backgroundImage: {
-                'grid-pattern': "linear-gradient(to bottom, theme('colors.neutral.950 / 0%'), theme('colors.neutral.950 / 100%')), url('/images/noise.png')"
+                // color: 'black'
+                'grid-pattern':
+                    "linear-gradient(to bottom, theme('colors.neutral.950 / 0%'), theme('colors.neutral.950 / 100%')), url('/images/noise.png')"
             },
             colors: {
                 neutral: colors.neutral
@@ -25,7 +27,7 @@ module.exports = {
                     'primary-content': '#171717',
                     secondary: '#016968',
                     info: '#2bdcd2',
-                    'info-content': '#171717',
+                    'info-content': '#171717'
                 }
             }
         ]

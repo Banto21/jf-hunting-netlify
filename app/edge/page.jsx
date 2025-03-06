@@ -3,7 +3,7 @@ import { Alert } from '../../components/alert';
 import { Markdown } from 'components/markdown';
 
 export const metadata = {
-    title: 'Fallback'
+    title: 'JF Hunting'
 };
 
 const explainer = `

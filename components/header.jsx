@@ -1,25 +1,28 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import netlifyLogo from 'public/netlify-logo.svg';
-import githubLogo from 'public/images/github-mark-white.svg';
+import jfhLogo from 'public/logo_white.jpg';
+import logoWithText from 'public/logo_with_text.svg';
+import logoCircle from 'public/logo_circle.png';
+import logoCircle_2 from 'public/logo_circle_2.png';
+import logoCircle_3 from 'public/logo_circle_3.png';
 
 const navItems = [
-    { linkText: 'Home', href: '/' },
-    { linkText: 'Revalidation', href: '/revalidation' },
-    { linkText: 'Image CDN', href: '/image-cdn' },
-    { linkText: 'Edge Function', href: '/edge' },
-    { linkText: 'Blobs', href: '/blobs' },
-    { linkText: 'Classics', href: '/classics' }
+    { linkText: 'PL', href: '/' },
+    { linkText: 'ENG', href: '/revalidation' }
+    // { linkText: 'Image CDN', href: '/image-cdn' },
+    // { linkText: 'Edge Function', href: '/edge' },
+    // { linkText: 'Blobs', href: '/blobs' },
+    // { linkText: 'Classics', href: '/classics' }
 ];
 
 export function Header() {
     return (
-        <nav className="flex flex-wrap items-center gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
-            <Link href="/">
-                <Image src={netlifyLogo} alt="Netlify logo" />
-            </Link>
+        <nav className="flex place-self-end flex-wrap  text-black gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
+            {/* <div className="h-200px"><Image src={logoCircle_3} height="200px" alt="JFH logo" className="h-100px" /></div> */}
+    
+                 
             {!!navItems?.length && (
-                <ul className="flex flex-wrap gap-x-4 gap-y-1">
+                <ul className="flex gap-x-4 gap-y-1">
                     {navItems.map((item, index) => (
                         <li key={index}>
                             <Link
@@ -32,15 +35,12 @@ export function Header() {
                     ))}
                 </ul>
             )}
-            <div className="flex-grow justify-end hidden lg:flex lg:mr-1">
-                <Link
-                    href="https://github.com/netlify-templates/next-platform-starter"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    <Image src={githubLogo} alt="GitHub logo" className="w-7" />
-                </Link>
-            </div>
+            {/* <Link href="/">
+                <Image src={jfhLogo} alt="JF Hunting logo" />
+            </Link> */}
+
+            
+
         </nav>
     );
 }
