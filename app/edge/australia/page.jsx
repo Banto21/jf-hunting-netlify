@@ -1,7 +1,7 @@
 import EdgeFunctionExplainer from '../explainer';
 
 export const metadata = {
-    title: 'In Australia'
+    title: 'JF Hunting'
 };
 
 export default function Page() {

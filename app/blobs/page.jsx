@@ -4,7 +4,7 @@ import { ContextAlert } from 'components/context-alert';
 import { getNetlifyContext, uploadDisabled } from 'utils';
 
 export const metadata = {
-    title: 'Blobs'
+    title: 'JF Hunting'
 };
 
 const explainer = `

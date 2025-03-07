@@ -5,7 +5,7 @@ import { ImageWithSizeOverlay } from './image-with-size-overlay';
 import { ContextAlert } from 'components/context-alert';
 
 export const metadata = {
-    title: 'Image CDN'
+    title: 'JF Hunting'
 };
 
 const sampleImage = '/images/corgi.jpg';
