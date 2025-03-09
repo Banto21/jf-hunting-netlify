@@ -17,7 +17,7 @@ const navItems = [
 
 export function Header() {
     return (
-        <nav className="flex place-self-end flex-wrap  text-black gap-4 pt-6 pb-12 sm:pt-12 md:pb-24">
+        <nav className="flex place-self-end flex-wrap max-h-100px text-black  pt-6 pb-12 sm:pt-12 md:pb-10">
             {/* <div className="h-200px"><Image src={logoCircle_3} height="200px" alt="JFH logo" className="h-100px" /></div> */}
     
                  
