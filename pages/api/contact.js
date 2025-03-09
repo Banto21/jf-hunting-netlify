@@ -12,14 +12,14 @@ export default async function handler(req, res) {
         port: 587,
         auth: {
             user: 'apikey',
-            pass: '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'
+            pass: process.env.SENDGRID_KEY
         }
     });
 
     try {
         await transporter.sendMail({
             from: `kontakt@jfhunting.pl`,
-            to: 'tomasz.banasiak21@gmail.com',
+            to: 'jfhuntingtours@gmail.com',
             subject: 'New Contact Form Message',
             text: `From: ${name} (${email})\n\n${message}`
         });
