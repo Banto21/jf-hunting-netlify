@@ -10,7 +10,7 @@ export function Markdown({ content }) {
 
     return (
         <MarkdownToJsx
-            className="markdown text-2xl"
+            className="markdown text-2xl text-justify"
             options={{
                 overrides: {
                     pre: HighlightedCodeBlock
