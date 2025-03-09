@@ -4,6 +4,7 @@ import { Card } from 'components/card';
 import { RandomQuote } from 'components/random-quote';
 import { Markdown } from 'components/markdown';
 import { ContextAlert } from 'components/context-alert';
+import ContactForm from "components/contact-form";
 import { getNetlifyContext } from 'utils';
 import ImageCarousel from "components/carousel";
 import logoCircle_3 from 'public/logo_circle_3.png';
@@ -55,6 +56,8 @@ export default function Page() {
             </section>
             {/* !!cards?.length && <CardsGrid cards={cards} /> */}
 
+            <ContactForm />
+            
             <section className="flex flex-col py-16">
                 <div className="max-w-4xl mx-auto text-center">
                     <h2 className="text-3xl font-semibold text-white mb-8">Kontakt</h2>
