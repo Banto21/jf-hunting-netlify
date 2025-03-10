@@ -1,18 +1,10 @@
-import Image from 'next/image';
 import Link from 'next/link';
-import jfhLogo from 'public/logo_white.jpg';
-import logoWithText from 'public/logo_with_text.svg';
-import logoCircle from 'public/logo_circle.png';
-import logoCircle_2 from 'public/logo_circle_2.png';
-import logoCircle_3 from 'public/logo_circle_3.png';
+
 
 const navItems = [
     { linkText: 'PL', href: '/' },
-    { linkText: 'ENG', href: '/revalidation' }
-    // { linkText: 'Image CDN', href: '/image-cdn' },
-    // { linkText: 'Edge Function', href: '/edge' },
-    // { linkText: 'Blobs', href: '/blobs' },
-    // { linkText: 'Classics', href: '/classics' }
+    { linkText: 'ENG', href: '/' }
+
 ];
 
 export function Header() {
@@ -35,9 +27,7 @@ export function Header() {
                     ))}
                 </ul>
             )}
-            {/* <Link href="/">
-                <Image src={jfhLogo} alt="JF Hunting logo" />
-            </Link> */}
+
 
             
 
