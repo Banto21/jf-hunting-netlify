@@ -1,35 +1,29 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { Card } from 'components/card';
-import { RandomQuote } from 'components/random-quote';
-import { Markdown } from 'components/markdown';
-import { ContextAlert } from 'components/context-alert';
-import ContactForm from "components/contact-form";
+import { Card } from '../../components/card';
+
+import { Markdown } from '../../components/markdown';
+
+import ContactForm from "../../components/contact-form-en";
 import { getNetlifyContext } from 'utils';
-import ImageCarousel from "components/carousel";
-import logoCircle_3 from 'public/logo_circle_3.png';
+import ImageCarousel from "../../components/carousel";
+
 import logoUpdated from 'public/logo_updated.png';
 
-const cards = [
-    //{ text: 'Hello', linkText: 'someLink', href: '/' }
-];
 
-const contextExplainer = `
-Nasze polowania odbywają się w najpiękniejszych miejscach na świecie – od malowniczej Afryki, przez dzikie tereny Estonii, po urokliwe lasy Polski. 
-Każde z tych miejsc oferuje unikalne możliwości, by przeżyć niezapomniane chwile w zgodzie z naturą i tradycją łowiecką danego regionu.
-`;
 
 const preDynamicContentExplainer = `
-Jako biuro, które stawia na pełne zadowolenie klienta, dbamy o każdy szczegół, zapewniając profesjonalną obsługę i indywidualne podejście 
-do każdego myśliwego. Bezpieczeństwo naszych gości to dla nas priorytet, dlatego wszystkie polowania są starannie zaplanowane 
-i realizowane zgodnie z najwyższymi standardami.
+As an agency that prioritizes customer satisfaction, we take care of every detail, providing professional service 
+and an individual approach to each hunter. The safety of our guests is our priority, which is why all hunts are 
+carefully planned and conducted in accordance with the highest standards.
 `;
 
 const postDynamicContentExplainer = `
-W JF Hunting wiemy, że polowanie to nie tylko zdobycz, ale przede wszystkim doświadczenie, które na długo zostaje w pamięci. 
-Daj się porwać tej przygodzie – z nami przeżyjesz łowieckie emocje w najpiękniejszych zakątkach świata.
+At JF Hunting, we know that hunting is not just about the trophy but, above all, the experience that stays in your 
+memory for a long time. Embark on this adventure with us – experience the thrill of hunting in the most 
+beautiful corners of the world.
 `;
-const huntingGroups = `Zapraszamy do współpracy Koła Łowieckie.`;
+const huntingGroups = `We invite Hunting Clubs to cooperate with us.`;
 const ctx = getNetlifyContext();
 
 export default function Page() {
@@ -37,13 +31,15 @@ export default function Page() {
         <main className="flex flex-col items-center gap-8 sm:gap-16">
             <div className="h-20px"><Image src={logoUpdated} height="200px" alt="JFH logo" className="h-100px" /></div>
             <section className="flex flex-col items-start gap-3 sm:gap-4">
-                <h1 className="mb-0">JF Hunting – Twoje wyjątkowe doświadczenie łowieckie na całym świecie</h1>
-                
+                <h1 className="mb-0">JF Hunting – Your Unique Hunting Experience Around the World</h1>
+
             </section>
             <section>
-            <p className="text-2xl">JF Hunting to biuro polowań, które łączy pasję do tradycyjnego łowiectwa z najwyższymi standardami bezpieczeństwa i komfortu. 
-Nasze polowania odbywają się w najpiękniejszych miejscach na świecie – od malowniczej Afryki, przez dzikie tereny Estonii, po urokliwe lasy Polski. 
-Każde z tych miejsc oferuje unikalne możliwości, by przeżyć niezapomniane chwile w zgodzie z naturą i tradycją łowiecką danego regionu.</p>
+            <p className="text-2xl">JF Hunting is a hunting agency that combines a passion for traditional hunting 
+                    with the highest standards of safety and comfort. Our hunts take place in the most beautiful locations 
+                    worldwide – from picturesque Africa, through the wild terrains of Estonia, to the charming forests of Poland. 
+                    Each of these places offers unique opportunities to experience unforgettable moments in harmony with nature 
+                    and the hunting traditions of the region.</p>
             </section>
             <section>
                 <Markdown content={preDynamicContentExplainer} />
@@ -65,7 +61,7 @@ Każde z tych miejsc oferuje unikalne możliwości, by przeżyć niezapomniane c
             
             <section className="flex flex-col py-16">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl font-semibold text-white mb-8">Kontakt</h2>
+                    <h2 className="text-3xl font-semibold text-white mb-8">Contact</h2>
                     
                     <div className="flex-col gap-8">                 
                         <div className="flex items-center justify-center space-x-4 mt-8">

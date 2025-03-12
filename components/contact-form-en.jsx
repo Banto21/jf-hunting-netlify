@@ -34,12 +34,12 @@ const ContactForm = () => {
 
   return (
     <div className="max-w-lg mx-auto text-black bg-white p-6 rounded-lg shadow-md">
-      <h2 className="text-2xl font-bold mb-4 text-center">Formularz kontaktowy</h2>
+      <h2 className="text-2xl font-bold mb-4 text-center">Contact Form</h2>
       <form onSubmit={handleSubmit} className="space-y-4">
         <input
           type="text"
           name="name"
-          placeholder="Imię i nazwisko"
+          placeholder="Full Name"
           value={formData.name}
           onChange={handleChange}
           required
@@ -48,7 +48,7 @@ const ContactForm = () => {
         <input
           type="email"
           name="email"
-          placeholder="Twój e-mail"
+          placeholder="Your Email"
           value={formData.email}
           onChange={handleChange}
           required
@@ -57,7 +57,7 @@ const ContactForm = () => {
         <textarea
           name="message"
           rows="4"
-          placeholder="Wiadomość"
+          placeholder="Message"
           value={formData.message}
           onChange={handleChange}
           required
@@ -67,13 +67,13 @@ const ContactForm = () => {
           type="submit"
           className="w-full bg-neutral-600 text-white p-3 rounded-lg hover:bg-neutral-800 transition"
         >
-          Wyślij wiadomość
+          Send Message
         </button>
       </form>
 
-      {status === "sending" && <p className="text-blue-500 mt-4">Wysyłanie...</p>}
-      {status === "success" && <p className="text-neutral-700 mt-4">Wiadomość wysłana</p>}
-      {status === "error" && <p className="text-red-500 mt-4">Błąd podczas wysyłania</p>}
+      {status === "sending" && <p className="text-blue-500 mt-4">Sending...</p>}
+      {status === "success" && <p className="text-neutral-700 mt-4">Message Sent</p>}
+      {status === "error" && <p className="text-red-500 mt-4">Error while sending</p>}
     </div>
   );
 };
