@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 const navItems = [
     { linkText: 'PL', href: '/' },
-    { linkText: 'ENG', href: '/' }
+    { linkText: 'ENG', href: '/en' }
 
 ];
 
